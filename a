@@ -1,0 +1,32 @@
+## Diagrama causa-efecto (Ishikawa) — Educación financiera
+
+```mermaid
+graph LR
+  %% Causas a la izquierda, problema en el centro, consecuencias a la derecha
+  subgraph Causas
+    A1[Falta de educación financiera temprana]
+    A2[Información financiera sesgada/comercial]
+    A3[Baja inclusión financiera (58% según CONEVAL)]
+    A4[Falta de herramientas intuitivas y accesibles]
+  end
+
+  E[Problema central:\nEducación financiera insuficiente\ny acceso limitado a información]
+
+  subgraph Consecuencias
+    B1[Mala gestión de recursos y endeudamiento]
+    B2[Limitación de oportunidades económicas (no acceso a créditos/ahorro)]
+    B3[Reproducción del ciclo de inestabilidad económica]
+    B4[Desinterés en buenas prácticas financieras]
+  end
+
+  %% Flechas causas -> problema
+  A1 --> E
+  A2 --> E
+  A3 --> E
+  A4 --> E
+
+  %% Flechas problema -> consecuencias
+  E --> B1
+  E --> B2
+  E --> B3
+  E --> B4
